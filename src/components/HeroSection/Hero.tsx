@@ -9,12 +9,12 @@ const Hero = () => {
 
     const handleConnectOpen = () => {
         setOpenConnect(true);
-    };
-
-    const handleConnectClose = () => {
+      };
+    
+      const handleConnectClose = () => {
         setOpenConnect(false);
-    };
-
+      };
+    
     return (
         <div className="heroSection">
             <div className="container">
@@ -39,16 +39,22 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-            {openConnect && (
-                <Modal
+                {/* <Modal
                     open={handleConnectOpen}
                     onClose={handleConnectClose}
                     aria-labelledby="simple-modal-title"
                     aria-describedby="simple-modal-description"
                 >
-                    <ConnectModal />
-                </Modal>
-            )}
+              <ConnectModal setOpenConnect={setOpenConnect} />
+                </Modal> */}
+                 <Modal
+              open={openConnect}
+              onClose={handleConnectClose}
+              aria-labelledby="simple-modal-title"
+              aria-describedby="simple-modal-description"
+            >
+              <ConnectModal setOpenConnect={setOpenConnect} />
+            </Modal>
         </div>
     )
 }

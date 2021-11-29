@@ -15,16 +15,7 @@ const Header = () => {
   };
   return (
     <div>
-      {openConnect && (
-        <Modal
-           open={handleConnectOpen}
-          onClose={handleConnectClose}
-          aria-labelledby="simple-modal-title"
-          aria-describedby="simple-modal-description"
-        >
-          <ConnectModal />
-        </Modal>
-      )}
+     
       <nav className="navbar navbar-expand-lg mainNavbar ">
         <div className="container">
           <a className="navbar-brand" href="#">
@@ -62,6 +53,14 @@ const Header = () => {
           </div>
         </div>
       </nav>
+      <Modal
+              open={openConnect}
+              onClose={handleConnectClose}
+              aria-labelledby="simple-modal-title"
+              aria-describedby="simple-modal-description"
+            >
+              <ConnectModal setOpenConnect={setOpenConnect} />
+            </Modal>
     </div>
   );
 };
