@@ -1,0 +1,31 @@
+.tokenRemaining,
+.eth {
+  background: linear-gradient(#7193ff, #2450a4);
+  padding: 12px !important;
+  border-radius: 30px !important;
+  border: 2px solid #002341;
+}
+.tokenRemaining p {
+  margin-left: 8.9rem !important;
+}
+
+@media (min-width: 320px) {
+  .tokenRemaining p {
+    margin-left: 1.1rem !important;
+  }
+  .eth p {
+    margin-left: 1.1rem !important;
+  }
+}
+
+@media (min-width: 360px) {
+}
+
+@media (min-width: 1024px) {
+  .tokenRemaining p {
+    margin-left: -18rem !important;
+  }
+  .eth p {
+    margin-left:  -11rem !important;
+  }
+}
