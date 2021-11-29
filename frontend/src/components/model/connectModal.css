@@ -1,0 +1,91 @@
+.metamask-btn{
+    text-align: center;
+    justify-content: center;
+    /* display: flex */
+    border-radius: 30px;
+    width: 360px;
+    height: 150px;
+    margin-bottom: 10px;
+    background: linear-gradient(104.78deg, #E89E2B 0%, #E33A30 97.02%);
+    box-shadow: inset 2px 2px 4px rgba(255, 255, 255, 0.25), inset -2px -2px 6px rgba(149, 3, 3, 0.25);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 19px;
+    margin-top: 10px;
+    color: white;
+    margin-left: -15px;
+}
+.metamask-btn-img{
+    width: 50px;
+    margin-right: 7px;
+    margin-top: 15px;
+
+}
+
+.trustwallet-btn{
+    text-align: center;
+    justify-content: center;
+    /* display: flex */
+    border-radius: 30px;
+    width: 360px;
+    height: 150px;
+    background: linear-gradient(104.78deg, #E89E2B 0%, #E33A30 97.02%);
+   box-shadow: inset 2px 2px 4px rgba(255, 255, 255, 0.25), inset -2px -2px 6px rgba(149, 3, 3, 0.25);
+   transition: 0.3s ease-in-out;
+   cursor: pointer;    color: whitesmoke;
+    font-weight: 700;
+    font-size: 19px;
+    margin-left: -15px;
+
+
+}
+
+
+.trustwallet-btn-img{
+    width: 50px;
+    margin-right: 7px;
+    margin-top: 15px;
+
+}
+
+
+@media (max-width: 420px) {
+    .metamask-btn{
+        width: 330px;
+        height: 110px;
+        margin-left: -15px;
+    }
+ 
+    .trustwallet-btn{
+          border-radius: 30px;
+        width: 330px;
+        height: 150px;
+    
+    
+    }
+    
+}
+
+
+@media (max-width: 380px) {
+    .metamask-btn{
+        width: 300px;
+        height: 150px;
+        margin-left: -17.5px;
+    }
+    .metamask-btn p {
+  font-size: 16px
+    }
+    .trustwallet-btn{
+          border-radius: 30px;
+          width: 300px;
+          height: 150px;
+          margin-left: -17.5px;
+
+    }
+    .trustwallet-btn p {
+        font-size: 16px
+          }
+    
+}

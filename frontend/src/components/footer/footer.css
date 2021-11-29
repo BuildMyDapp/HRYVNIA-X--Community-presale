@@ -1,0 +1,9 @@
+.footer {
+  border-top-left-radius: -80% 50%;
+
+  /* border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%; */
+  height: 25vh;
+  background: linear-gradient(104.78deg, #e33a30 0%, #e89e2b 97.02%);
+  clip-path: polygon(48% 8%, 100% 0, 100% 43%, 100% 100%, 68% 100%, 0 100%, 0 78%, 0% 43%, 0 0) !important;
+}
