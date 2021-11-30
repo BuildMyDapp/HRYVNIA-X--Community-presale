@@ -1,31 +1,122 @@
-.tokenRemaining,
-.eth {
-  background: linear-gradient(#7193ff, #2450a4);
-  padding: 12px !important;
-  border-radius: 30px !important;
-  border: 2px solid #002341;
+.token {
+  background: #0f1932 !important;
+  color: white !important;
 }
-.tokenRemaining p {
-  margin-left: 8.9rem !important;
+
+.tokens {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.tokens::before {
+  border-radius: 8px 0 0 8px;
+  border: 2px solid #394663;
+  border-right: none;
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 100px;
+  top: 0;
+  left: 10px;
+}
+
+.tokens::after {
+  border-radius: 0px 8px 8px 0px;
+  border: 2px solid #394663;
+  border-left: none;
+  content: "";
+  position: absolute;
+  height: 100px;
+  width: 40px;
+  top: 0;
+  right: 10px;
+}
+
+.tokens h2 {
+  font-size: 20px;
+}
+
+.tokens p {
+  font-size: 20px;
+}
+
+.tokens p span {
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.token-date-box {
+  margin-left: 10px;
+}
+
+.bgtext {
+  position: relative !important;
+}
+
+.bgtext::before {
+  margin: 3rem;
+  content: "TOKENS";
+  position: absolute;
+  color: rgba(255, 255, 255, 0.041);
+  top: -50px;
+  left: 28rem;
+  font-size: 6rem;
+  z-index: 1;
+  font-weight: 600;
 }
 
 @media (min-width: 320px) {
-  .tokenRemaining p {
-    margin-left: 1.1rem !important;
-  }
-  .eth p {
-    margin-left: 1.1rem !important;
+  .bgtext::before {
+    left: 0rem;
+    font-size: 4rem;
+    top: -34px !important;
   }
 }
 
-@media (min-width: 360px) {
+@media (min-width: 375px) {
+  .bgtext::before {
+    left: 0.8rem;
+    top: -34px;
+  }
+}
+
+@media (min-width: 411px) {
+  .bgtext::before {
+    left: 1.9rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .bgtext::before {
+    left: 11.8rem !important;
+    top: -30px !important;
+  }
 }
 
 @media (min-width: 1024px) {
-  .tokenRemaining p {
-    margin-left: -18rem !important;
-  }
-  .eth p {
-    margin-left:  -11rem !important;
+  .bgtext::before {
+    left: 19.8rem !important;
+    top: -30px !important;
   }
 }
+
+@media (min-width: 1280px) {
+    .bgtext::before {
+      left: 20.8rem !important;
+      top: -55px !important;
+      font-size: 6rem !important;
+}
+}
+@media (min-width: 1440px) {
+    .bgtext::before {
+      left: 27rem !important;
+      top: -55px !important;
+      font-size: 6rem !important;
+    }
+  }
+  
+  

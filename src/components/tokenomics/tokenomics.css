@@ -1,0 +1,84 @@
+.tokenomics {
+  background: #2450a4;
+  padding: 4rem 0;
+}
+.tokenDiv {
+  background: #252f4a;
+  border-radius: 5px ;
+}
+.bgtextToko {
+  position: relative;
+}
+.tokonomicsh1
+{
+    margin-top: -10rem !important;
+}
+.bgtextToko::before {
+  margin: 3rem ;
+  content: "TOKENOMICS";
+  position: absolute;
+  color: rgba(255, 255, 255, 0.041);
+  top: -50px;
+  left: 28rem;
+  font-size: 6rem;
+  z-index: 1;
+  font-weight: 600;
+}
+
+@media (min-width: 320px) {
+  .bgtextToko::before {
+    left: -3rem;
+    font-size: 2.8rem;
+    top: -68px !important;
+  }
+}
+@media (min-width: 360px) {
+    .bgtextToko::before {
+      left: -2rem;
+      font-size: 2.8rem;
+      top: -68px !important;
+    }
+  }
+
+@media (min-width: 375px) {
+  .bgtextToko::before {
+    left: -1rem;
+    top: -34px;
+  }
+}
+
+@media (min-width: 411px) {
+  .bgtextToko::before {
+    left: 0rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .bgtextToko::before {
+    left: 10rem !important;
+    top: -62px !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bgtextToko::before {
+    left: 13.5rem !important;
+   font-size: 4rem;
+   top: -77px !important;
+  }
+}
+
+@media (min-width: 1280px) {
+  .bgtextToko::before {
+    left: 10.8rem !important;
+    top: -95px !important;
+    font-size: 6rem !important;
+  }
+}
+@media (min-width: 1440px) {
+  .bgtextToko::before {
+    left: 19rem !important;
+    top: -100px !important;
+    font-size: 6rem !important;
+  }
+}

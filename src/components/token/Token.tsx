@@ -1,27 +1,61 @@
-import React from 'react'
+import React from "react";
 import "./token.css";
 const Token = () => {
-    return (
-        <div>
-            <div className="container">
-            <div className="row mt-5">
-                <div className="col-lg-6 mt-3">
-                      <div className="tokenRemaining">
-                           <h1 className="text-center text-white">Tokens Remaining</h1>
-                           <p  className="text-start text-white    text-center">0</p>
-                      </div>
-                </div>
-                <div className="col-lg-6 mt-3">
-                <div className="eth">
-                           <h1 className="text-center text-white">ETH Raised</h1>
-                           <p className="text-start text-white    text-center ">0</p>
-                      </div>
-                </div>
-            </div>
-            </div>
+  return (
+    <div className="token">
+      <div className="container my-5 ">
+        <div className="row  ">
+          <div className="bgtext">
+            <h1 className="text-center mt-5  ">TOKENS</h1>
+          </div>
 
+          <p className="text-center mt-5">Breakdown of our token Recipients</p>
+          <div className="tokens col-lg-7 px-4 my-5">
+            <h2 className="mt-3">Tokens Allocated for Manual Burn</h2>
+            <p>
+              20.51% <span>(Lockup)</span>
+            </p>
+          </div>
+          <div className="tokens col-lg-7 px-4">
+            <h2 className="mt-3">Tokens Allocated for Public Sale</h2>
+            <p>
+              10% <span>(Lockup)</span>
+            </p>
+          </div>
+
+          <div className="row">
+            <div className="tokens col-lg-4 px-4">
+              <h2 className="mt-3">Tokens Allocated for Private Sale</h2>
+              <p>
+                25.63% <span>(Lockup)</span>
+              </p>
+            </div>
+            <div className="tokens col-lg-4 px-4">
+              <h2 className="mt-3">Tokens Allocated for Seed</h2>
+              <p>
+                0.03% <span>(Lockup)</span>
+              </p>
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="tokens col-lg-4 px-4">
+              <h2 className="mt-3">Tokens Allocated for Foundation</h2>
+              <p>
+                25.63% <span>(Lockup)</span>
+              </p>
+            </div>
+            <div className="tokens col-lg-4 px-4">
+              <h2 className="mt-3">Tokens Allocated for Team</h2>
+              <p>
+                12.82% <span>(Lockup)</span>
+              </p>
+            </div>
+          </div>
         </div>
-    )
-}
+      </div>
+    </div>
+  );
+};
 
-export default Token
+export default Token;
