@@ -46,6 +46,8 @@ export const initialState: StateType = {
   minValue: null,
 };
 
+
+
 export const loadBlockchain = createAsyncThunk(
   "loadwalletcoonnect",
   async (_, thunkAPI) => {
@@ -54,14 +56,14 @@ export const loadBlockchain = createAsyncThunk(
         await Web3.givenProvider.enable();
         const web3 = new Web3(Web3.givenProvider);
         const accounts = await web3.eth.getAccounts();
-        const marketPlaceContract: EthContract.Contract = new web3.eth.Contract(
-          CONTRACT_ABI as AbiItem[],
-          CONTRACT_ADDRESS
-        );
+        // const marketPlaceContract: EthContract.Contract = new web3.eth.Contract(
+        //   CONTRACT_ABI as AbiItem[],
+        //   CONTRACT_ADDRESS
+        // );
         return {
           web3,
           accounts,
-          marketPlaceContract,
+          // marketPlaceContract,
         };
       } else {
         console.log("error connecting to metamask");
@@ -92,15 +94,15 @@ export const loadWalletConnect = createAsyncThunk(
         const web3 = new Web3(provider as any);
         console.log("web3 state" , web3)
         const accounts = await web3.eth.getAccounts();
-        const marketPlaceContract: EthContract.Contract = new web3.eth.Contract(
-          CONTRACT_ABI as AbiItem[],
-          CONTRACT_ADDRESS
-        );
+        // const marketPlaceContract: EthContract.Contract = new web3.eth.Contract(
+        //   CONTRACT_ABI as AbiItem[],
+        //   CONTRACT_ADDRESS
+        // );
         console.log("Contract", marketPlaceContract);
         return {
           web3,
           accounts,
-          marketPlaceContract,
+          // marketPlaceContract,
         };
       } else {
         return {
