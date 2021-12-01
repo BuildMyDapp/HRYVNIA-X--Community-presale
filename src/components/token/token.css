@@ -75,6 +75,10 @@
     font-size: 4rem;
     top: -34px !important;
   }
+  .token {
+    height: 850px;
+margin-bottom: 100px
+  }
 }
 
 @media (min-width: 375px) {
@@ -82,11 +86,19 @@
     left: 0.8rem;
     top: -34px;
   }
+  .token {
+    height: 850px;
+margin-bottom: 100px
+  }
 }
 
 @media (min-width: 411px) {
   .bgtext::before {
     left: 1.9rem;
+  }
+  .token {
+    height: 850px;
+margin-bottom: 100px
   }
 }
 
