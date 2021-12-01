@@ -6,7 +6,8 @@
     width: 360px;
     height: 150px;
     margin-bottom: 10px;
-    background: linear-gradient(104.78deg, #E89E2B 0%, #E33A30 97.02%);
+    background: linear-gradient(104.78deg, #7192ffda 0%, #2451a4da 97.02%) !important;
+
     box-shadow: inset 2px 2px 4px rgba(255, 255, 255, 0.25), inset -2px -2px 6px rgba(149, 3, 3, 0.25);
     transition: 0.3s ease-in-out;
     cursor: pointer;
@@ -30,7 +31,8 @@
     border-radius: 30px;
     width: 360px;
     height: 150px;
-    background: linear-gradient(104.78deg, #E89E2B 0%, #E33A30 97.02%);
+    background: linear-gradient(104.78deg, #7192ffda 0%, #2451a4da 97.02%) !important;
+
    box-shadow: inset 2px 2px 4px rgba(255, 255, 255, 0.25), inset -2px -2px 6px rgba(149, 3, 3, 0.25);
    transition: 0.3s ease-in-out;
    cursor: pointer;    color: whitesmoke;
