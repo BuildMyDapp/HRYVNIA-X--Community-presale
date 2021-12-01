@@ -15,11 +15,11 @@ const Token = () => {
       <div className="container my-5 ">
         <div className="row  ">
           <div className="bgtext">
-            <h1 className="text-center mt-5   " data-aos='fade-right'>TOKENS</h1>
+            <h1 className="text-center mt-5   "  >TOKENS</h1>
           </div>
 
           {/* <p className="text-center mt-5">Breakdown of our token Recipients</p> */}
-          <div className="tokens col-lg-7 px-4 my-5"  data-aos='fade-right'>
+          <div className="tokens col-lg-7 px-4 my-5"   >
             <h2 className="mt-3">Total Tax 6%</h2>
             <p>
               1% <span>for redistribution and </span> 1%<span>
@@ -44,7 +44,7 @@ const Token = () => {
           </div>
 
           <div className="row">
-            <div className="tokens col-lg-4 px-4" data-aos='fade-right'>
+            <div className="tokens col-lg-4 px-4"  >
               <h2 className="mt-3">Pre-Sale</h2>
               <p>
                 Public sales
@@ -53,7 +53,7 @@ const Token = () => {
                 Team tokens
               </p>
             </div>
-            <div className="tokens col-lg-4 px-4" data-aos="fade-left">
+            <div className="tokens col-lg-4 px-4"  >
               <h2 className="mt-3">Liquidity </h2>
               <h2 className="mt-3">Exchange listing </h2>
 

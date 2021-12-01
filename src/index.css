@@ -3,7 +3,7 @@
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif !important;
-   
+   overflow-x: hidden !important;
 }
 
 h1,h2,h3,h5,h6,p
