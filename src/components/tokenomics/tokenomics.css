@@ -6,6 +6,12 @@
   background: #252f4abd;
   border-radius: 5px ;
 }
+.tokenDiv:hover
+{
+  background-color:#252f4ae5 ;
+  /* background-color:#252f4ad2 ; */
+  cursor: pointer;
+}
 .bgtextToko {
   position: relative;
 }

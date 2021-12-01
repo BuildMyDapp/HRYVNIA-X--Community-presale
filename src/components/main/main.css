@@ -14,6 +14,14 @@
   margin: 10px 0px !important;
 }
 
+.MuiCard-root:hover
+{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transform: translateY(-10px);
+  transition: linear all 0.5s;
+  cursor: pointer;
+}
+
 @media (min-width: 320px) {
   .tokenRemaining p {
     margin-left: 1.1rem !important;
