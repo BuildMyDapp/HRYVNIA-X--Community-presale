@@ -19,8 +19,8 @@ const Hero = () => {
     <div className="heroSection">
       <div className="container">
         <div className="row pt-5">
-          <div className="col-lg-6 mt-5">
-            {/* <h1 className=" text-white">Online P2P digital currency</h1> */}
+          <div className="col-lg-6 mt-5  order-2 order-lg-1">
+           
             <h1 className=" text-white"> Welcome to HRYVNIA-X Community!</h1>
             <p className="text-white">
               The HRYVNIA-X is a decentralized DeFi Token launched on Binance
@@ -36,7 +36,7 @@ const Hero = () => {
               </button>
             </div>
           </div>
-          <div className="col-lg-6">
+          <div className="col-lg-6 order-1 order-lg-2">
             <div className="text-lg-end text-center mt-5">
               <img src={logo} alt="" width="300 " height="350" />
             </div>

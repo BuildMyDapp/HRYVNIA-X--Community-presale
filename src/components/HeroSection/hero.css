@@ -39,7 +39,7 @@
 
 @media (min-width: 320px) {
   .heroSection {
-    height: 135vh;
+    height: 148vh;
   }
 }
 
@@ -51,13 +51,13 @@
 
 @media (min-width: 375px) {
   .heroSection {
-    height: 95vh;
+    height: 98vh;
   }
 }
 
 @media (min-width: 411px) {
   .heroSection {
-    height: 101vh;
+    height: 91vh;
   }
 }
 
