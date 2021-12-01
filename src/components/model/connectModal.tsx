@@ -8,11 +8,11 @@ import walletIcon from "../../images/wallet.png";
 
 
 
-// import {
-//   loadBlockchain,
-//   loadWalletConnect,
-// } from "../redux/slices/web3ConnectSlice";
-// import { useAppDispatch, useAppSelector } from "../redux/store";
+import {
+  loadBlockchain,
+  loadWalletConnect,
+} from "../../redux/slices/web3ConnectSlice";
+import { useAppDispatch, useAppSelector } from "../../redux/store";
 
 function getModalStyle() {
   const top = 50;
@@ -54,19 +54,19 @@ type Props = {
 const ConnectModal: React.FC<Props> = ({ setOpenConnect  }) => {
   const classes = useStyles();
   const [modalStyle] = React.useState(getModalStyle);
-  // const dispatch = useAppDispatch();
+  const dispatch = useAppDispatch();
 
-  // const web3 = useAppSelector((state) => state.web3Connect.web3);
-  // console.log("web3>>>" , web3)
-  // const handleBlockchain = () => {
-  //   dispatch(loadBlockchain());
-  //   setOpenConnect(false);
-  // };
+  const web3 = useAppSelector((state) => state.web3Connect.web3);
+  console.log("web3>>>" , web3)
+  const handleBlockchain = () => {
+    dispatch(loadBlockchain());
+    setOpenConnect(false);
+  };
 
-  // const handleWalletConnect = () => {
-  //   dispatch(loadWalletConnect());
-  //   setOpenConnect(false);
-  // };
+  const handleWalletConnect = () => {
+    dispatch(loadWalletConnect());
+    setOpenConnect(false);
+  };
 
   return (
     <div>
@@ -76,7 +76,7 @@ const ConnectModal: React.FC<Props> = ({ setOpenConnect  }) => {
             <div style={modalStyle} className={classes.paper}>
               <>
                 <button
-                  // onClick={() => handleBlockchain()}
+                  onClick={() => handleBlockchain()}
                   className="metamask-btn"
                 >
                   <img src={metaIcon} alt="icon" className="metamask-btn-img" />
@@ -85,7 +85,7 @@ const ConnectModal: React.FC<Props> = ({ setOpenConnect  }) => {
                 </button>
 
                 <button
-                  // onClick={() => handleWalletConnect()}
+                  onClick={() => handleWalletConnect()}
                   className="trustwallet-btn"
                 >
                   <img
