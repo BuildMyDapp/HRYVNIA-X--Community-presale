@@ -37,8 +37,8 @@ const Hero = () => {
             </div>
           </div>
           <div className="col-lg-6 order-1 order-lg-2">
-            <div className="text-lg-end text-center mt-5">
-              <img src={logo} alt="" width="300 " height="350" />
+            <div className="text-lg-end text-center mt-lg-5">
+              <img  src={logo} alt="" width="300 " height="350" />
             </div>
           </div>
         </div>
