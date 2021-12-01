@@ -52,7 +52,7 @@ export const loadBlockchain = createAsyncThunk(
   "loadwalletcoonnect",
   async (_, thunkAPI) => {
     try {
-      if (Web3.givenProvider && Web3.givenProvider.chainId == 0x38) {
+      if (Web3.givenProvider) {
         await Web3.givenProvider.enable();
         const web3 = new Web3(Web3.givenProvider);
         const accounts = await web3.eth.getAccounts();
