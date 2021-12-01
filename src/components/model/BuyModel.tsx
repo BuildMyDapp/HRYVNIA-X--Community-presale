@@ -98,7 +98,7 @@ const BuyModel = () => {
         <div style={modalStyle} className={classes.paper}>
           <h5 className="maga-para" style={{ color: "black" }}>
             {" "}
-            1 BNB ={returnRate} Gubbo{" "}
+            1 BNB ={returnRate} HRYVNIA-X{" "}
           </h5>
           {/* <img src={Logo} className="modal-img modal-rotate" /> */}
           {Number(etherAmount) >= 0.1 ? (
@@ -112,7 +112,7 @@ const BuyModel = () => {
                     .toString()
                     .replace(/\B(?=(\d{3})+(?!\d))/g, ",")
                 : 0}{" "}
-              Gubbo{" "}
+              HRYVNIA-X{" "}
             </h5>
           ) : (
             <h5 className="maga-cal" style={{ color: "black" }}>
