@@ -18,36 +18,49 @@ const Token = () => {
             <h1 className="text-center mt-5   " data-aos='fade-right'>TOKENS</h1>
           </div>
 
-          <p className="text-center mt-5">Breakdown of our token Recipients</p>
+          {/* <p className="text-center mt-5">Breakdown of our token Recipients</p> */}
           <div className="tokens col-lg-7 px-4 my-5"  data-aos='fade-right'>
-            <h2 className="mt-3">Tokens Allocated for Manual Burn</h2>
+            <h2 className="mt-3">Total Tax 6%</h2>
             <p>
-              20.51% <span>(Lockup)</span>
+              1% <span>for redistribution and </span> 1%<span>
+              for charity
+              </span>
+            </p>
+            {/* <p>
+              1% <span></span>
+            </p> */}
+            <p>
+              4% <span>goes to liquidity</span>
             </p>
           </div>
           <div className="tokens col-lg-7 px-4">
-            <h2 className="mt-3">Tokens Allocated for Public Sale</h2>
+            <h2 className="mt-3">Max holding limit 13200000 3% </h2>
             <p>
-              10% <span>(Lockup)</span>
+             Max buy: 8800000 <span>(2%)</span>
+            </p>
+            <p>
+            Max Sell:: 4400000  <span>(1%)</span>
             </p>
           </div>
 
           <div className="row">
             <div className="tokens col-lg-4 px-4" data-aos='fade-right'>
-              <h2 className="mt-3">Tokens Allocated for Private Sale</h2>
+              <h2 className="mt-3">Pre-Sale</h2>
               <p>
-                25.63% <span>(Lockup)</span>
+                Public sales
+              </p>
+              <p>
+                Team tokens
               </p>
             </div>
             <div className="tokens col-lg-4 px-4" data-aos="fade-left">
-              <h2 className="mt-3">Tokens Allocated for Seed</h2>
-              <p>
-                0.03% <span>(Lockup)</span>
-              </p>
+              <h2 className="mt-3">Liquidity </h2>
+              <h2 className="mt-3">Exchange listing </h2>
+
             </div>
           </div>
 
-          <div className="row">
+          {/* <div className="row">
             <div className="tokens col-lg-4 px-4" data-aos='fade-right'>
               <h2 className="mt-3">Tokens Allocated for Foundation</h2>
               <p>
@@ -60,7 +73,7 @@ const Token = () => {
                 12.82% <span>(Lockup)</span>
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
