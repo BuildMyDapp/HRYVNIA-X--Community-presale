@@ -98,7 +98,7 @@ export const loadWalletConnect = createAsyncThunk(
         //   CONTRACT_ABI as AbiItem[],
         //   CONTRACT_ADDRESS
         // );
-        console.log("Contract", marketPlaceContract);
+        // console.log("Contract", marketPlaceContract);
         return {
           web3,
           accounts,
