@@ -65,7 +65,7 @@ const Footer = () => {
             }}
           />
         </div>
-        <div className="row mb-5 mb-lg-5">
+        <div className="row  ">
           <div className="col-lg-12">
             <p className="text-lg-center footerp text-white">
               © {new Date().getFullYear()} Copyright by hryvnia-x.org. All
