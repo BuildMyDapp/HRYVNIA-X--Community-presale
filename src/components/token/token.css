@@ -1,6 +1,7 @@
 .token {
   background: #5C80E6 !important;
   color: white !important;
+  overflow: hidden !important;
 }
 
 .tokens {

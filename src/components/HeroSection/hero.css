@@ -7,13 +7,11 @@
 
 .heroSection h1 {
   font-weight: 700 !important;
- 
 }
 
 .heroSection p {
   font-weight: 500 !important;
-  font-family: 'Open Sans', sans-serif !important;
-
+  font-family: "Open Sans", sans-serif !important;
 }
 
 .connectBtnHero {
@@ -27,17 +25,14 @@
   font-size: 15px;
 }
 
-.connectBtnHero:hover
-{
+.connectBtnHero:hover {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border: 2px solid #002341;
   transition: all 0.1s linear !important;
 }
 
-
-.connectBtnHero:focus
-{
-   box-shadow:  none !important;
+.connectBtnHero:focus {
+  box-shadow: none !important;
 }
 
 @media (min-width: 320px) {
@@ -48,19 +43,25 @@
 
 @media (min-width: 360px) {
   .heroSection {
-    height: 105vh;
+    height: 116vh;
   }
 }
 
 @media (min-width: 375px) {
   .heroSection {
-    height: 98vh;
+    height: 114vh;
+  }
+}
+
+@media (min-width: 375px) {
+  .heroSection {
+    height: 114vh;
   }
 }
 
 @media (min-width: 411px) {
   .heroSection {
-    height: 88vh;
+    height: 98vh;
   }
 }
 
@@ -78,13 +79,12 @@
 
 @media (min-width: 1280px) {
   .heroSection {
-    height:62vh;
+    height: 62vh;
   }
 }
 
-
 @media (min-width: 1440px) {
   .heroSection {
-    height:55vh;
+    height: 55vh;
   }
 }

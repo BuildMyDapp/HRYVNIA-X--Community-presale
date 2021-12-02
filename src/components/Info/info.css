@@ -1,6 +1,6 @@
 .info
 {
-    
+    overflow: hidden !important;
 }
 .info p 
 {

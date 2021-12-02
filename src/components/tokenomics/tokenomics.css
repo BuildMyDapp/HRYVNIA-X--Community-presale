@@ -1,6 +1,7 @@
 .tokenomics {
   background: #5C80E6;
   padding: 4rem 0;
+  overflow: hidden !important;
 }
 .tokenDiv {
   background: #252f4abd;
