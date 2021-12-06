@@ -21,7 +21,7 @@ const Info = () => {
   return (
     <div className="info mt-5">
         <div>
-             <img src={arrow} alt="" width="30" height="30"  className="toTop" onClick={bottomToTop} /> 
+             <img src={arrow} alt="" width="40" height="40"  className="toTop" onClick={bottomToTop} /> 
         </div>
       <div className="container">
         <div className="row">

@@ -23,11 +23,16 @@
 }
 .connectBtn
 {
-    /* background: linear-gradient(150.78deg, #7193ff, #2450a4 100.02%); */
+    background: #6487f086 !important;
     border-radius: 30px !important;
     font-size: 12px !important;
     padding: 5px 12px !important;
+
     
+}
+.connectBtn:focus
+{
+    box-shadow: none;
 }
 .connectBtn:hover
 {
