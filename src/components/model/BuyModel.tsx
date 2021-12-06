@@ -61,8 +61,8 @@ const BuyModel = () => {
   const dispatch = useDispatch();
   localStorage.clear()
 
-  const { returnRate, minValue, maxValue , web3 } = useAppSelector((state) => state.web3Connect);
- 
+  const { returnRate, minValue, maxValue, web3 } = useAppSelector((state) => state.web3Connect);
+
   const classes = useStyles();
   const [modalStyle] = React.useState(getModalStyle);
 
@@ -75,12 +75,12 @@ const BuyModel = () => {
 
   const onSubmit = async () => {
     try {
-     const userAmount =  Number(etherAmount) * 10e17
+      const userAmount = Number(etherAmount) * 10e17
       //etherAmount * 10e17;
       //pass amount in parameter of this function
-       dispatch(buyTokensAsync({
-         amount : userAmount
-       }));
+      dispatch(buyTokensAsync({
+        amount: userAmount
+      }));
     } catch (error) {
       console.log("error", error);
     }
@@ -92,7 +92,7 @@ const BuyModel = () => {
     setRate(returnRate);
 
   }, [web3]);
-  
+
   return (
     <div>
       <>
@@ -106,20 +106,20 @@ const BuyModel = () => {
             <h5 className="maga-cal" style={{ color: "black" }}>
               {rate
                 ? (
-                    (Math.abs(Number(etherAmount)) * 10e17) /
-                    (10e17 / Number(rate))
-                  )
-                    .toFixed(2)
-                    .toString()
-                    .replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+                  (Math.abs(Number(etherAmount)) * 10e17) /
+                  (10e17 / Number(rate))
+                )
+                  .toFixed(2)
+                  .toString()
+                  .replace(/\B(?=(\d{3})+(?!\d))/g, ",")
                 : 0}{" "}
               HRYVNIA-X{" "}
             </h5>
           ) : (
-            <h5 className="maga-cal" style={{ color: "black" }}>
-              Minimum {minValue / 10e17} BNB required{" "}
-            </h5>
-          )}
+              <h5 className="maga-cal" style={{ color: "black" }}>
+                Minimum {minValue / 10e17} BNB required{" "}
+              </h5>
+            )}
           <TextField
             className="text-field"
             label="Enter BNB"
@@ -127,15 +127,15 @@ const BuyModel = () => {
             onChange={(e) => handleEthAmountAndRate(e)}
           />
           {Number(etherAmount) > minValue / 10e17 &&
-          Number(etherAmount) < maxValue / 10e17 ? (
-            <button className="buy-btn" onClick={onSubmit}>
-              Buy Now
+            Number(etherAmount) < maxValue / 10e17 ? (
+              <button className="buy-btn" onClick={onSubmit}>
+                Buy Now
             </button>
-          ) : (
-            <button className="buy-btn-disabled" disabled>
-              Buy Now
+            ) : (
+              <button className="buy-btn-disabled" disabled>
+                Buy Now
             </button>
-          )}
+            )}
         </div>
       </>
     </div>

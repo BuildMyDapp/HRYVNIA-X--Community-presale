@@ -25,7 +25,7 @@ const Footer = () => {
           <div className="col-lg-12 mt-5">
             <h3 className="text-center text-white mt-4"  data-aos="fade-right">Connect With Us</h3>
             <div className="text-center d-flex justify-content-center align-items-center" >
-              <a href="https://www.facebook.com/"    >
+              <a href="https://twitter.com/hryvnia_x" target="_blank" >
                 <img
                   className="me-2"
                   src={twitter}
@@ -48,7 +48,7 @@ const Footer = () => {
                 />
               </a> */}
 
-              <a href="https://www.facebook.com/"   >
+              <a href="https://www.reddit.com/user/hryvnia_x" target="_blank"  >
                 <img
                   className="ms-2"
                   src={reddit}
