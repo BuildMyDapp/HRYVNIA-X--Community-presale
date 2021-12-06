@@ -1,9 +1,29 @@
 .info
 {
     overflow: hidden !important;
+    position: relative;
 }
+
 .info p 
 {
     font-size: 1.2rem !important;
     font-weight: 600;
+}
+
+.toTop
+{
+    position: absolute;
+     right: 0;
+     margin-right:1rem;
+    bottom: 0;
+    background: #5C80E6;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.toTop:hover
+{
+    transform: scale(1.1);
+    transition: all 0.3s linear;
+    border: 2px solid rgba(0, 0, 0, 0.603);
 }

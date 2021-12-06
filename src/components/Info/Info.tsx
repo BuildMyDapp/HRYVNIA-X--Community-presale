@@ -2,6 +2,7 @@ import React,{useEffect} from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import "./info.css";
+import arrow from '../../images/arrow.png'
 const Info = () => {
 
   useEffect(() => {
@@ -9,8 +10,19 @@ const Info = () => {
       duration : 1000
     });
   }, []);
+
+  const bottomToTop=()=>
+  {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // for smoothly scrolling
+ });
+  }
   return (
     <div className="info mt-5">
+        <div>
+             <img src={arrow} alt="" width="30" height="30"  className="toTop" onClick={bottomToTop} /> 
+        </div>
       <div className="container">
         <div className="row">
           <div className="col-lg-12   my-5">

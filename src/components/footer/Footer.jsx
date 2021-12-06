@@ -16,14 +16,16 @@ const Footer = () => {
 
 
   return (
-    <div className="footer mt-5">
+    <div className="footer mt-5" id="footer">
+       
+        
       <div className="container">
         <div className="row ">
          
           <div className="col-lg-12 mt-5">
             <h3 className="text-center text-white mt-4"  data-aos="fade-right">Connect With Us</h3>
             <div className="text-center d-flex justify-content-center align-items-center" >
-              <a href="https://www.facebook.com/"  data-aos="fade-right" >
+              <a href="https://www.facebook.com/"    >
                 <img
                   className="me-2"
                   src={twitter}
@@ -32,18 +34,10 @@ const Footer = () => {
                   alt=""
                 />
               </a>
-              <a href="https://www.facebook.com/"  data-aos="fade-right" >
-                <img
-                  className="me-2"
-                  src={facebook}
-                  width="30"
-                  height="30"
-                  alt=""
-                />
-              </a>
+              
 
-              <h5 className="text-white me-2" data-aos="zoom-in">Etherscan</h5>
-              <a href="https://www.facebook.com/" data-aos="fade-left"  >
+              <h5 className="text-white me-2" data-aos="zoom-in"><a href="https://bscscan.com/token/0xc63d45be76649f295b185d88bfe010145f4590ba" target="_blank">BscScan</a> </h5>
+              <a href="https://www.facebook.com/"   >
                 <img
                   className="ms-2"
                   className="discord"
@@ -54,7 +48,7 @@ const Footer = () => {
                 />
               </a>
 
-              <a href="https://www.facebook.com/"  data-aos="fade-left" >
+              <a href="https://www.facebook.com/"   >
                 <img
                   className="ms-2"
                   src={reddit}

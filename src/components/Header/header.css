@@ -21,7 +21,20 @@
 {
     box-shadow: none !important;
 }
+.connectBtn
+{
+    /* background: linear-gradient(150.78deg, #7193ff, #2450a4 100.02%); */
+    border-radius: 30px !important;
+    font-size: 12px !important;
+    padding: 5px 12px !important;
+    
+}
+.connectBtn:hover
+{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: 2px solid #002341;
 
+}
 .customToggler.navbar-toggler {
     border-color: white !important;
   }

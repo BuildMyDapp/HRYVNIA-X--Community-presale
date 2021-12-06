@@ -12,7 +12,7 @@ const Tokenomics = () => {
   }, []);
 
   return (
-    <div className="tokenomics">
+    <div className="tokenomics"id="tokonomics">
       <div className="container">
         <div className="bgtextToko">
           <h1 className="text-center mt-0 text-white" data-aos="fade-right" >TOKENOMICS</h1>

@@ -55,8 +55,13 @@ const Header = () => {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <a className="nav-link ms-3 ms-lg-0" href="#">
+                <a className="nav-link ms-3 ms-lg-0" href="#footer">
                   CONTACT US
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link ms-3 ms-lg-0" href="#tokonomics">
+                  TOKONOMICS
                 </a>
               </li>
               <li className="nav-item ms-3">
@@ -64,7 +69,7 @@ const Header = () => {
                 {web3 ? (
                   <>
                     <button
-                      className="btn nav-link connectWallet"
+                      className="btn nav-link connectBtn"
                       onClick={handleConnectOpen}
                     >
                       {" "}
