@@ -44,7 +44,7 @@ const Main = () => {
           </div>
           <div className="col-lg-6   mt-3">
             <div className="eth" data-aos="fade-left">
-              <h1 className="text-center text-white">ETH Raised</h1>
+              <h1 className="text-center text-white">BNB Raised</h1>
               <p className="text-start text-white    text-center ">{ethRaised? ethRaised/10e17:0}</p>
             </div>
           </div>
