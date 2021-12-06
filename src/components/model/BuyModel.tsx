@@ -116,7 +116,7 @@ const BuyModel = () => {
             </h5>
           ) : (
             <h5 className="maga-cal" style={{ color: "black" }}>
-              Minimum {minValue / 10e17} bnb required{" "}
+              Minimum {minValue / 10e17} BNB required{" "}
             </h5>
           )}
           <TextField

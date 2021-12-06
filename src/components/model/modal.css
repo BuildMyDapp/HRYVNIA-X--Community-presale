@@ -1,56 +1,60 @@
-.buy-btn{
-    text-align: center;
-    justify-content: center;
-    /* display: flex */
-    border-radius: 30px;
-    width: 300px;
-    height: 60px;
-    margin-top: 20px;
-
-    margin-bottom: 8x;
-    background: linear-gradient(104.78deg, #7192ff 0%, #2451a4fd 97.02%) !important;
-
-    color: white; 
-    border: 2px solid black;
-    font-weight: 700;
-    font-size: 19px;
+.buy-btn {
+  text-align: center;
+  justify-content: center;
+  border-radius: 30px;
+  width: 300px;
+  height: 60px;
+  margin-top: 20px;
+  margin-bottom: 8x;
+  background: linear-gradient(
+    104.78deg,
+    #7192ff 0%,
+    #2451a4fd 97.02%
+  ) !important;
+  color: white;
+  border: 2px solid black;
+  font-weight: 700;
+  font-size: 19px;
 }
 
-.modal-img{
-    width: 100px 
+.modal-img {
+  width: 100px;
 }
-.buy-btn-disabled{
-    text-align: center;
-    justify-content: center;
-    /* display: flex */
-    border-radius: 30px;
-    width: 300px;
-    height: 60px;
-    margin-top: 20px;
-    margin-bottom: 8x;
-    background: linear-gradient(104.78deg, #7192ffa4 0%, #2451a48a 97.02%) !important;
+.buy-btn-disabled {
+  text-align: center;
+  justify-content: center;
+ border-radius: 30px;
+  width: 300px;
+  height: 60px;
+  margin-top: 20px;
+  margin-bottom: 8x;
+  background: linear-gradient(
+    104.78deg,
+    #7192ffa4 0%,
+    #2451a48a 97.02%
+  ) !important;
 
-    color: white;
-    font-weight: 700;
-    font-size: 19px; 
-    /* cursor: not-allowed */
+  color: white;
+  font-weight: 700;
+  font-size: 19px;
+  cursor: not-allowed
 }
-.text-field{
-    width: 100%;
+.text-field {
+  width: 100%;
 }
 
 .modal-rotate {
-    animation: rotation 4s infinite linear;
-    /* width: 360px !important;  */
-  }
-  /* .img-container{
+  animation: rotation 4s infinite linear;
+  /* width: 360px !important;  */
+}
+/* .img-container{
     margin-top: 19px;
 } */
-  @keyframes rotation {
-    from {
-      transform: rotateX(0deg);
-    }
-    to {
-      transform: rotateY(359deg);
-    }
+@keyframes rotation {
+  from {
+    transform: rotateX(0deg);
   }
+  to {
+    transform: rotateY(359deg);
+  }
+}
