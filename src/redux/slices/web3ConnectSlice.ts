@@ -170,7 +170,7 @@ export const maxContributionAsync: any = createAsyncThunk(
     const { contract, accounts, web3 } = state.web3Connect;
     try {
       console.log("Started Minting NFT");
-      let result = await contract ?.methods.maxContribution().call();
+      let result = await contract ?.methods._maxContribution().call();
       return result;
     } catch (error) {
       console.log("User rejected the transaction");
