@@ -42,7 +42,7 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
   },
   btn: {
-    background: "#1077b3",
+    background: "#1077b3 ",
     borderRadius: "20px",
     color: "white",
     width: "100%",
@@ -61,7 +61,7 @@ const BuyModel = () => {
   const dispatch = useDispatch();
 
   const { returnRate, minValue, maxValue , web3 } = useAppSelector((state) => state.web3Connect);
-
+ 
   const classes = useStyles();
   const [modalStyle] = React.useState(getModalStyle);
 
