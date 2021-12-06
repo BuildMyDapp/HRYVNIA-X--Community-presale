@@ -54,14 +54,14 @@ const Header = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto">
-              <li className="nav-item">
-                <a className="nav-link ms-3 ms-lg-0" href="#footer">
-                  CONTACT US
+            <li className="nav-item">
+                <a className="nav-link ms-3 ms-lg-0" href="#tokonomics">
+                  TOKONOMICS
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link ms-3 ms-lg-0" href="#tokonomics">
-                  TOKONOMICS
+                <a className="nav-link ms-3 ms-lg-0"  href="mailto:hryvnia-x@protonmail.com">
+                  CONTACT US
                 </a>
               </li>
               <li className="nav-item ms-3">

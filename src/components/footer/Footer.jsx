@@ -37,7 +37,7 @@ const Footer = () => {
               
 
               <h5 className="text-white me-2" data-aos="zoom-in"><a href="https://bscscan.com/token/0xc63d45be76649f295b185d88bfe010145f4590ba" target="_blank">BscScan</a> </h5>
-              <a href="https://www.facebook.com/"   >
+              {/* <a href="https://www.facebook.com/"   >
                 <img
                   className="ms-2"
                   className="discord"
@@ -46,7 +46,7 @@ const Footer = () => {
                   height="30"
                   alt=""
                 />
-              </a>
+              </a> */}
 
               <a href="https://www.facebook.com/"   >
                 <img

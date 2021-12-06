@@ -59,6 +59,7 @@ const BuyModel = () => {
   const [etherAmount, setEtheAmount] = useState(" ");
   const [rate, setRate] = useState("");
   const dispatch = useDispatch();
+  localStorage.clear()
 
   const { returnRate, minValue, maxValue , web3 } = useAppSelector((state) => state.web3Connect);
  
