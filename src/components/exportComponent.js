@@ -5,4 +5,5 @@ export { default as Main } from './main/Main';
 export { default as Token } from './token/Token';
 export { default as Tokenomics } from './tokenomics/Tokenomics';
 export { default as Info } from './Info/Info';
+export { default as Timer } from './timer/Timer';
 
