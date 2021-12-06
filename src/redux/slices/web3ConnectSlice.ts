@@ -29,7 +29,7 @@ type Web3ConnectPayloadType = {
   returnRate: any;
   resultMax: any;
   resultMin: any;
-  web3LoadingErrorMessage : any
+  web3LoadingErrorMessage: any
 };
 
 export const initialState: StateType = {
@@ -68,7 +68,7 @@ export const loadBlockchain = createAsyncThunk(
       } else {
         console.log("error connecting to metamask");
         return {
-          web3LoadingErrorMessage : "error connecting to metamask"
+          web3LoadingErrorMessage: "error connecting to metamask"
         }
       }
     } catch (err) {
@@ -92,7 +92,7 @@ export const loadWalletConnect = createAsyncThunk(
       if (provider) {
         await provider.enable();
         const web3 = new Web3(provider as any);
-        console.log("web3 state" , web3)
+        console.log("web3 state", web3)
         const accounts = await web3.eth.getAccounts();
         const marketPlaceContract: EthContract.Contract = new web3.eth.Contract(
           CONTRACT_ABI as AbiItem[],
@@ -195,6 +195,40 @@ export const minimumContributionAsync: any = createAsyncThunk(
   }
 );
 
+export const ethRaisedAsync: any = createAsyncThunk(
+  "weiRaised",
+  async (_, thunkAPI) => {
+    const state = thunkAPI.getState() as RootStateType;
+    const { contract, accounts, web3 } = state.web3Connect;
+    try {
+      console.log("Started Minting NFT");
+      let result = await contract ?.methods.weiRaised().call();
+      return result;
+    } catch (error) {
+      console.log("User rejected the transaction");
+      return error;
+    }
+  }
+);
+
+
+export const remainingTokenAsync: any = createAsyncThunk(
+  "remainingTokenAsync",
+  async (_, thunkAPI) => {
+    const state = thunkAPI.getState() as RootStateType;
+    const { contract, accounts, web3 } = state.web3Connect;
+    try {
+      console.log("Started Minting NFT");
+      let result = await contract ?.methods.remainingTokens().call();
+      return result;
+    } catch (error) {
+      console.log("User rejected the transaction");
+      return error;
+    }
+  }
+);
+
+
 type Data = {
   amount: number
 }
@@ -229,18 +263,18 @@ const web3ConnectSlice = createSlice({
       state.accounts = payload ?.accounts;
       state.web3Loading = false;
       state.contract = payload ?.marketPlaceContract;
-      state.web3LoadingErrorMessage = payload?.web3LoadingErrorMessage
+      state.web3LoadingErrorMessage = payload ?.web3LoadingErrorMessage
     },
     [loadBlockchain.fulfilled.toString()]: (
       state,
       { payload }: PayloadAction<Web3ConnectPayloadType>
     ) => {
-      console.log("payload>>>" , payload)
+      console.log("payload>>>", payload)
       state.web3 = payload ?.web3;
       state.accounts = payload ?.accounts;
       state.web3Loading = false;
       state.contract = payload ?.marketPlaceContract;
-      state.web3LoadingErrorMessage = payload?.web3LoadingErrorMessage
+      state.web3LoadingErrorMessage = payload ?.web3LoadingErrorMessage
     },
     [rateAsync.fulfilled.toString()]: (
       state,
