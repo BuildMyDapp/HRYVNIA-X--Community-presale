@@ -3,8 +3,30 @@ import "./main.css";
 import { Card } from "@material-ui/core";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useAppDispatch, useAppSelector } from "../../redux/store";
+import { useDispatch } from "react-redux";
+import {
+  remainingTokenAsync,ethRaisedAsync
+} from "../../redux/slices/web3ConnectSlice";
 
 const Main = () => {
+
+  
+
+  const dispatch = useDispatch();
+
+  const {   tokenRemaining,ethRaised ,web3} = useAppSelector((state) => state.web3Connect);
+  console.log(   tokenRemaining,ethRaised);
+
+  React.useEffect(() => {
+    dispatch(remainingTokenAsync());
+    dispatch(ethRaisedAsync())
+   
+
+  }, [web3]);
+  
+
+
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -17,13 +39,13 @@ const Main = () => {
           <div className="col-lg-6 mt-3">
             <div className="tokenRemaining" data-aos="fade-right">
               <h1 className="text-center text-white">Tokens Remaining</h1>
-              <p className="text-start text-white    text-center">0</p>
+              <p className="text-start text-white    text-center"> { tokenRemaining ? tokenRemaining/10e17:0}</p>
             </div>
           </div>
           <div className="col-lg-6   mt-3">
             <div className="eth" data-aos="fade-left">
               <h1 className="text-center text-white">ETH Raised</h1>
-              <p className="text-start text-white    text-center ">0</p>
+              <p className="text-start text-white    text-center ">{ethRaised? ethRaised/10e17:0}</p>
             </div>
           </div>
         </div>

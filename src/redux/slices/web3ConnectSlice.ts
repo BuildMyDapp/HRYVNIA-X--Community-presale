@@ -19,6 +19,8 @@ export type StateType = {
   returnRate: any;
   maxValue: any;
   minValue: any;
+  tokenRemaining:any;
+  ethRaised:any;
 };
 
 type Web3ConnectPayloadType = {
@@ -29,7 +31,9 @@ type Web3ConnectPayloadType = {
   returnRate: any;
   resultMax: any;
   resultMin: any;
-  web3LoadingErrorMessage: any
+  web3LoadingErrorMessage: any;
+  tokenRemaining:any;
+  ethRaised:any;
 };
 
 export const initialState: StateType = {
@@ -44,6 +48,8 @@ export const initialState: StateType = {
   returnRate: null,
   maxValue: null,
   minValue: null,
+  tokenRemaining:null,
+  ethRaised:null,
 };
 
 
@@ -296,6 +302,20 @@ const web3ConnectSlice = createSlice({
     ) => {
       console.log("minimumAsybc", payload);
       state.minValue = payload;
+    },
+    [ethRaisedAsync.fulfilled.toString()]: (
+      state,
+      { payload }: PayloadAction<Web3ConnectPayloadType>
+    ) => {
+      console.log("ethRaised", payload);
+      state.ethRaised = payload;
+    },
+    [remainingTokenAsync.fulfilled.toString()]: (
+      state,
+      { payload }: PayloadAction<Web3ConnectPayloadType>
+    ) => {
+      console.log("tokenRemaing", payload);
+      state.tokenRemaining = payload;
     },
   },
 });
