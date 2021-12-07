@@ -55,13 +55,16 @@ const Header = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto">
-            <li className="nav-item">
+              <li className="nav-item">
                 <a className="nav-link ms-3 ms-lg-0" href="#tokonomics">
                   TOKONOMICS
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link ms-3 ms-lg-0"  href="mailto:hryvnia-x@protonmail.com">
+                <a
+                  className="nav-link ms-3 ms-lg-0"
+                  href="mailto:hryvnia-x@protonmail.com"
+                >
                   CONTACT US
                 </a>
               </li>
@@ -82,12 +85,12 @@ const Header = () => {
                       aria-labelledby="simple-modal-title"
                       aria-describedby="simple-modal-description"
                     >
-                      <BuyModel   />
+                      <BuyModel />
                     </Modal>
                   </>
                 ) : (
                   <>
-                   <button
+                    <button
                       className="btn nav-link connectWallet"
                       onClick={handleConnectOpen}
                     >
@@ -104,34 +107,41 @@ const Header = () => {
                     </Modal>
                   </>
                 )}
-                <li>
-                <a href="https://twitter.com/hryvnia_x" target="_blank" >
-                <img
-                  className="me-2"
-                  src={twitter}
-                  width="30"
-                  height="30"
-                  alt=""
-                />
-              </a>
-                </li>
-                <li>
-                <a href="https://www.reddit.com/user/hryvnia_x" target="_blank"  >
-                <img
-                  className="ms-2"
-                  src={reddit}
-                  width="30"
-                  height="30"
-                  alt=""
-                />
-              </a>
-                </li>
+             
+                
+              </li>
+              <li className="nav-item ms-lg-2 ms-3">
+                <a
+                  className="nav-link  "
+                  href="https://twitter.com/hryvnia_x"
+                  target="_blank" >
+                  <img
+                    className=""
+                    src={twitter}
+                    width="30"
+                    height="30"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li className="nav-item me-lg-4 ms-3 ms-lg-0" >
+                <a
+                  className="nav-link    "
+                  href="https://www.reddit.com/user/hryvnia_x"
+                >
+                  <img
+                    className=" "
+                    src={reddit}
+                    width="30"
+                    height="30"
+                    alt=""
+                  />
+                </a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-       
     </div>
   );
 };
