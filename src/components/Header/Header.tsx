@@ -128,7 +128,7 @@ const Header = () => {
                 <a
                   className="nav-link    "
                   href="https://www.reddit.com/user/hryvnia_x"
-                >
+                  target="_blank" >
                   <img
                     className=" "
                     src={reddit}
