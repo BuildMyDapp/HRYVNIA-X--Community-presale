@@ -4,7 +4,8 @@ import logo from "../../images/logo.png";
 import Modal from "@material-ui/core/Modal";
 import ConnectModal from "../model/connectModal";
 import { useAppDispatch, useAppSelector } from "../../redux/store";
-
+import reddit from "../../images/reddit.png";
+import twitter from "../../images/twitter.png";
 import BuyModel from "../model/BuyModel";
 import {
   maxContributionAsync,
@@ -103,7 +104,28 @@ const Header = () => {
                     </Modal>
                   </>
                 )}
-                 
+                <li>
+                <a href="https://twitter.com/hryvnia_x" target="_blank" >
+                <img
+                  className="me-2"
+                  src={twitter}
+                  width="30"
+                  height="30"
+                  alt=""
+                />
+              </a>
+                </li>
+                <li>
+                <a href="https://www.reddit.com/user/hryvnia_x" target="_blank"  >
+                <img
+                  className="ms-2"
+                  src={reddit}
+                  width="30"
+                  height="30"
+                  alt=""
+                />
+              </a>
+                </li>
               </li>
             </ul>
           </div>
